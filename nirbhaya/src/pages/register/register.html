@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style= "text-align:center; margin-top:50px;">
+  <h3>Register</h3>
+  <hr>
+<h2>Please enter your two contacts to reach you in Emergency : </h2>
+    <ion-item>
+    <ion-label fixed>Contact 1</ion-label>
+    <ion-input type="text" [(ngModel)] ="contact1"  value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Contact 2</ion-label>
+    <ion-input type="text" [(ngModel)] ="contact2" value=""></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label stacked>Emergency Message</ion-label>
+    <ion-input type="text" [(ngModel)] ="emer_txt" value=""></ion-input>
+  </ion-item>
+
+<button ion-button style="margin-top:20px;"  (click)="StoreInfo(contact1,contact2,emer_txt)">Submit</button>
+
+</ion-content>

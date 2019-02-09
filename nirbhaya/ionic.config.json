@@ -1,0 +1,7 @@
+{
+  "name": "nirbhaya",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
